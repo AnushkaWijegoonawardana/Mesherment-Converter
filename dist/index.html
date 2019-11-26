@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Page Title Details -->
+    <title>Measurement Converter</title>
+
+    <!-- Page Meta Data Details -->
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="This is a measherment converter. Developed using JavaScript"
+    />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Anushka Wijegoonawardana" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="box-container">
+      <div class="page-header text-center">
+        <h1 class="main-heading">Measurement Converter</h1>
+      </div>
+
+      <nav class="navigation-menu">
+        <button class="menu-item" id="defaultTab" onclick="openTab(event, 'weightTab')">Weight</button>
+        <button class="menu-item"  onclick="openTab(event, 'lengthTab')">Length</button>
+        <!-- <button class="menu-item" id="">tempature</button> -->
+      </nav>
+
+      <div class="tab-container">
+        <div class="tab-item" id="weightTab">
+          <div class="grid-container">
+            <div class="input-section">
+              <div class="from-group">
+                <input
+                  type="number"
+                  id="gramInput"
+                  class="form-control"
+                  placeholder="Enter grams..."
+                />
+              </div>
+
+              <div class="from-group">
+                <input
+                  type="number"
+                  id="kgInput"
+                  class="form-control"
+                  placeholder="Enter kg..."
+                />
+              </div>
+
+              <div class="from-group">
+                <input
+                  type="number"
+                  id="toneInput"
+                  class="form-control"
+                  placeholder="Enter tone..."
+                />
+              </div>
+
+              <div class="from-group">
+                <input
+                  type="number"
+                  id="poundInput"
+                  class="form-control"
+                  placeholder="Enter pound..."
+                />
+              </div>
+            </div>
+
+            <div class="output-section" id="output-cards">
+              <div class="output-card">
+                <div class="card-title">Grams :</div>
+                <div class="output-value" id="gramOutpu"></div>
+              </div>
+
+              <div class="output-card">
+                <div class="card-title">Kilograms :</div>
+                <div class="output-value" id="kgOutpu"></div>
+              </div>
+
+              <div class="output-card">
+                <div class="card-title">Tones :</div>
+                <div class="output-value" id="toneOutpu"></div>
+              </div>
+
+              <div class="output-card">
+                <div class="card-title">Pound :</div>
+                <div class="output-value" id="poundOutpu"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-item" id="lengthTab">
+          <div class="grid-container">
+            <div class="input-section">
+              <div class="from-group">
+                <input
+                  type="number"
+                  id="cmInput"
+                  class="form-control"
+                  placeholder="Enter centimeter..."
+                />
+              </div>
+
+              <div class="from-group">
+                <input
+                  type="number"
+                  id="meterInput"
+                  class="form-control"
+                  placeholder="Enter meter..."
+                />
+              </div>
+
+              <div class="from-group">
+                <input
+                  type="number"
+                  id="kmInput"
+                  class="form-control"
+                  placeholder="Enter km..."
+                />
+              </div>
+
+              <div class="from-group">
+                <input
+                  type="number"
+                  id="mileInput"
+                  class="form-control"
+                  placeholder="Enter mile..."
+                />
+              </div>
+
+              <div class="from-group">
+                <input
+                  type="number"
+                  id="footInput"
+                  class="form-control"
+                  placeholder="Enter foot..."
+                />
+              </div>
+            </div>
+
+            <div class="output-section" id="output-cards-1">
+              <div class="output-card">
+                <div class="card-title">Centimeters :</div>
+                <div class="output-value" id="cmOutpu"></div>
+              </div>
+
+              <div class="output-card">
+                <div class="card-title">Meters :</div>
+                <div class="output-value" id="meterOutpu"></div>
+              </div>
+
+              <div class="output-card">
+                <div class="card-title">Kilometer :</div>
+                <div class="output-value" id="kmOutpu"></div>
+              </div>
+
+              <div class="output-card">
+                <div class="card-title">Mile :</div>
+                <div class="output-value" id="mileOutpu"></div>
+              </div>
+
+              <div class="output-card">
+                <div class="card-title">Foot :</div>
+                <div class="output-value" id="footOutpu"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
